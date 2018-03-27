@@ -1,0 +1,18 @@
+eureka:
+  instance:
+    preferIpAddress: true #访问服务时使用的IP地址（还必须设置preferIpAddress才能使用
+    lease-renewal-interval-in-seconds: 5  #指示eureka客户端需要向eureka服务器发送心跳以指示它仍然存在的频率（以秒为单位）
+    #。如果在leaseExpirationDurationInSeconds中指定的时间段内未收到心跳线，则eureka服务器将从其视图中删除该实例，因此不允许此实例的流量。
+    lease-expiration-duration-in-seconds: 5
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/,http://localhost:8762/eureka/
+spring:
+  application:
+    name: spring-provider
+server:
+  port: 8086
+
+logging:
+  level:
+    com.netflix: DEBUG
