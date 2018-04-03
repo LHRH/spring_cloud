@@ -1,0 +1,12 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: spring-cloud-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/LHRH/spring-cloud-config-files
+          search-paths: respo
+      label: master
