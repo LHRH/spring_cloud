@@ -2,7 +2,7 @@ server:
   port: 8888
 spring:
   application:
-    name: spring-cloud-config
+    name: zuul
   cloud:
     config:
       server:
