@@ -11,7 +11,7 @@ import java.net.UnknownHostException;
 
 /**
  * @Author: LH
- * @Description:
+ * @Description: HTTP请求
  * @Date: 2018/3/23 0023 10:22
  */
 @Component
