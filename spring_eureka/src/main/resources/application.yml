@@ -71,3 +71,5 @@ eureka:
       enable-self-preservation: false  #关闭自我保护意识
       eviction-interval-timer-in-ms: 5000 #清理挂掉的服务
 
+#java -jar spring_eureka-1.0-SNAPSHOT.jar --spring.profiles.active=peer1
+# java -jar spring_eureka-1.0-SNAPSHOT.jar --spring.profiles.active=peer2
