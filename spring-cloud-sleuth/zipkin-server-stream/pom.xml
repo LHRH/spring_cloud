@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.zipkin</groupId>
+	<artifactId>zipkin-server-stream</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>jar</packaging>
+
+	<name>zipkin-server-stream</name>
+	<description>使用spring-cloud-starter-stream-rabbit进行链路通讯</description>
+
+
+	<parent>
+		<groupId>com.sleuth</groupId>
+		<artifactId>spring-cloud-sleuth</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<dependencies>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-eureka</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-sleuth-zipkin-stream</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-stream-rabbit</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>io.zipkin.java</groupId>
+			<artifactId>zipkin-autoconfigure-ui</artifactId>
+		</dependency>
+	</dependencies>
+</project>
