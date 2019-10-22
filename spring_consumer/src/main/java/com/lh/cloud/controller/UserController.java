@@ -21,6 +21,7 @@ public class UserController {
     @RequestMapping("/get")
     @ResponseBody
     public String getUser() {
+        System.out.println("2222");
         RestTemplate template = getRestTemplate();
         System.out.println("提交测试");
         return template.getForObject("http://spring-provider-service/get/110", String.class);
